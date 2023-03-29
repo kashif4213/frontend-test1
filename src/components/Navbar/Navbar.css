@@ -1,0 +1,24 @@
+.navSearch {
+    width: 95%;
+    border-radius: 1rem;
+    display:inline-block;
+  height:50px;
+    }
+.searchBar{
+    position:relative;
+    margin:5px; 
+    width: 60%;
+}
+.iconSize{
+  
+    position:absolute;
+ left: 640px;
+  width: 20px;
+  height:20px;
+ 
+}
+.avatar{
+    width:30px;
+    height: 30px;
+    
+}
