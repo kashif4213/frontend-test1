@@ -2,11 +2,18 @@ import Wrapper from "../../hoc/Wrapper"
 import './Navbar.css'
 import img6 from '../../imgs/img6.png'
 import img7 from '../../imgs/img7.png'
+import React, {useState, useEffect } from 'react';
+import { Link } from "react-router-dom";
 
 const Navbar = (props) => {
+    // const [count, setCount] = useState(0);
+    // useEffect(() => {
+    //     // Update the document title using the browser API
+    //     setCount(props.cart)
+    //   });
     return <Wrapper>
         <div className="row mt-5 ms-5">
-            <div className="col-2 "> <h3 className=" fs-6 mt-3 text-end">GROCERIES </h3></div>
+            <div className="col-2 ms-4"> <h3 className=" fs-6 mt-3 text-end">GROCERIES </h3></div>
             <div className=" searchBar  ">
                 <input className="border-1 border-secondary-subtle navSearch" type="text" placeholder="    Search"></input>
 
@@ -28,7 +35,9 @@ const Navbar = (props) => {
                         <img className="avatar" src={img6}/>
                     </div>
                     <div className="col mt-3 ">
-                        <img className="avatar" src={img7}/>
+                       
+                    { props.cartLength > 0 && <p className="cartCount ms-4  bg-primary text-center text-light rounded-circle">{props.cartLength}</p>}                     
+                    <Link to ="/checkout" cart={props.cart}><img className="avatar" src={img7} /></Link>
                     </div>
                     <div className="col"></div>
                     

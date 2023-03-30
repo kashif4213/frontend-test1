@@ -1,0 +1,18 @@
+.cartName{
+    font-size: xx-small;
+}
+
+.plusBtn{
+    border-radius: 1rem;
+}
+.cart{
+    box-shadow: 0 2px 15px -3px rgba(0,0,0,0.07),0 10px 20px -2px rgba(0,0,0,0.07);
+    border-radius: 0.5rem;
+    height :80px;
+    margin-left: 200px;
+    width: 83%;
+}
+.cross{
+    margin-left: 100px;
+    
+}

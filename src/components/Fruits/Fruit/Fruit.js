@@ -12,8 +12,8 @@ const Fruit = (props) => {
 
                     <h3 className="fontSizeName mt-3">{props.menuItem.name}</h3>
                     <p className=" fontSize">{props.menuItem.bio}</p>
-                    {props.menuItem.no > 5 && <button type="button" class=" rounded-pill btnSize btn btn-sm btn-success border-1 border-white mt-5"> <p className="fontSizeName"> Available</p></button>}
-                    {props.menuItem.no <= 5 && <button type="button" class="btn btn-warning btnSize btn-sm rounded-pill border-1 border-white mt-5"><p className="fontSizeName text-light">Only {props.menuItem.no} Left</p></button>}
+                    {props.menuItem.no > 5 && <button type="button"   onClick={()=>props.addToCart(props.menuItem.id)} class=" rounded-pill btnSize btn btn-sm btn-success border-1 border-white mt-5 mb-0"> <p  className="fontSizeName"> Available</p></button>}
+                    {props.menuItem.no <= 5 && <button type="button"  onClick={()=>props.addToCart(props.menuItem.id)} class="btn btn-warning btnSize btn-sm rounded-pill border-1 border-white mt-5 mb-0"> <p  className="fontSizeName text-light">Only {props.menuItem.no} Left</p></button>}
                     <div className=" row mt-3">
 
                         {props.menuItem.unit =='p' && <div className="col"><h3 className="fontSizeName mt-1">{props.menuItem.price + props.menuItem.unit}</h3></div>}
