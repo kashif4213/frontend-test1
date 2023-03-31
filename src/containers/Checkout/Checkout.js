@@ -11,26 +11,37 @@ const Checkout = (props) => {
 
             </div>
         </div>
-        <CartItems cartItems={props.cart}/>
-        <hr className=" lineBreak"/>
+        <CartItems cartItems={props.cart} />
+        <hr className=" lineBreak" />
 
-        <div className="value row">
-        <h3 className="col text-center">Subtotal</h3> <span className="col text-center">{props.totalPrice}</span>
+        <div className="value row ">
+            <div className="col-5"></div>
+            <div className="col-4 d-flex justify-content-around">
+                <h3 className=" text-center fs-6 fw-bolder">Subtotal</h3> <span className=" text-center fs-6 fw-semibold">£{props.totalPrice}</span>
+
+            </div>
         </div>
 
-        <hr className=" lineBreak"/>
-        
-        <div className="value row">
-        <h3 className="col text-center">Discount</h3> <span className="col text-center">{props.totalPrice}</span>
+        <hr className=" lineBreak" />
+
+        <div className="value row ">
+            <div className="col-5"></div>
+            <div className="col-4 d-flex justify-content-around">
+                <h3 className=" text-center fs-6 fw-bolder">Discount</h3> <span className=" text-center fs-6 fw-semibold">£{props.totalPrice}</span>
+            </div>
         </div>
-       
-       <hr className=" lineBreak"/>
-       
-       <div className="value row">
-        <h3 className="col text-center ms-5">Total</h3> <span className="col text-center">{props.totalPrice}</span>      
-        <button type="button" className="btn btn-success w-25">Checkout</button>
-       </div>
-       <hr className=" lineBreak"/>
+        <hr className=" lineBreak" />
+
+        <div className="value row ">
+            <div className="col-5"></div>
+            <div className="col-4 d-flex justify-content-around">
+                <h3 className="text-center fs-6 fw-bolder ">Total</h3> <span className="text-center fs-6 fw-semibold">£{props.totalPrice}</span>
+            </div>
+            <button type="button" className="btn btn-success w-25">Checkout</button>
+        </div>
+
+
+        <hr className=" lineBreak" />
 
     </Wrapper>
 }
