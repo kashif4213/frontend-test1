@@ -11,7 +11,7 @@ const Checkout = (props) => {
 
             </div>
         </div>
-        <CartItems cartItems={props.cart} />
+        <CartItems cartItems={props.cart} addtoCart={props.addtoCart} removefromCart={props.removefromCart} cross={props.cross} />
         <hr className=" lineBreak" />
 
         <div className="value row ">
